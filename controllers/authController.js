@@ -2,6 +2,8 @@ const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
+// signup controller function
+
 const SignUp = async (req, res) => {
   try {
     const { username, email, password, confirmPassword } = req.body;
